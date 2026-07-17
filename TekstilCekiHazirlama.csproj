@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Çeki Hazırla</AssemblyName>
+    <AssemblyTitle>Çeki Hazırla</AssemblyTitle>
+    <ApplicationIcon>Irmak.ico</ApplicationIcon>
+    <PackageIcon>Irmak.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Irmak.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Irmak.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.10" />
+    <PackageReference Include="QuestPDF" Version="2026.7.1" />
+  </ItemGroup>
+
+</Project>
